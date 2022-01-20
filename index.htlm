@@ -1,2 +1,11 @@
 Test för uppgiften och för att det måste finnas en fil som heter index
 Lägger till text
+
+1. Ge en beskrivning (syfte och vad de gör) av var och en av protokollen HTTP, TCP och IP.
+HTTP - Hyper Text T Protocol
+TCP - T C P
+IP - Internet Protocol
+
+2. Beskriv vilka delar följande url består av:
+http://medieteknik.lnu.se/1me321/uppg/u1.html#fragor
+Ta upp alla delar som åtskiljs av / eller #.
