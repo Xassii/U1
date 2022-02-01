@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body {
+    background-color: oldlace;
+    background-image: linear-gradient(150deg, red, orange, yellow,limegreen, blue 3.4em, oldlace 3.5em);
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(182, 88, 0);
+    background-image: linear-gradient(0deg, rgb(182, 88, 0), rgb(216, 104, 0));
+    border-style: double;
+}
+
+h1, h2, h3 {
+    font-family: verdana;
+}
+
+h1 {
+    font-size: 3em;
+    color: rgb(172, 22, 172);
+    text-shadow: 2px 2px black;
+}
+
+h2 {
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+a {
+    background-color:goldenrod;
+    border-style:solid;
+    border-color: rgb(194, 191, 0);
+    border-width: 2px;
+    background-image: linear-gradient(0deg, goldenrod, gold);
+    line-height: 2em;
+}
+
+main {
+    padding: 2em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-family: monospace;
+    font-size: 1.5em;
+    display: inline;
+    padding-right: 5%;
+}
