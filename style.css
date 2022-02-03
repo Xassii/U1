@@ -50,10 +50,6 @@ a {
     line-height: 2rem;
     text-decoration: none;
     padding-inline: 1rem;
-    /* "Knapparna" jag skapar här delar på sig om fönstret blir för
-    smalt och jag hittar inte något sätt att lösa det. Eftersom uppgiften
-    säger att sidorna ska vara "utan någon speciell anpassning"
-    hoppas jag det är okej att jag lämnar det så här. */
 }
 
 a:hover {
@@ -71,7 +67,7 @@ ul.site-navigation {
 }
 
 .site-navigation li {
-    display: inline;
+    display: inline-block;
     padding-right: 4rem;
     line-height: 2.4rem;
 }
