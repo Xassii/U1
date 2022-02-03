@@ -60,6 +60,12 @@ a:hover {
 img {
     display: block;
     margin: auto;
+    max-width: 80%;
+    max-height: 10rem;
+}
+
+img.tall {
+    max-height: 13rem;
 }
 
 ul.site-navigation {
