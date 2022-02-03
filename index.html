@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- TODO -->
+<!-- Validera all kod -->
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
@@ -6,17 +8,29 @@
     <meta name="description" content="Lösning av uppgift 1 del 1 på lnus kurs 1ME321 Webbteknik 1.">
     <meta name="author" content="Amanda Ivarsson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webbteknik 1 Uppgift 1</title>
+    <title>Webbteknik 1 Uppgift 1 del 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Datakommunikation och webbadresser</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Datakommunikation och webbadresser</a></li>
-                <li><a href="html.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
+            <ul class="site-navigation">
+                <li>
+                    <a href="index.html">
+                        Datakommunikation och webbadresser
+                    </a>
+                </li>
+                <li>
+                    <a href="html.html">
+                        HTML
+                    </a>
+                </li>
+                <li>
+                    <a href="css.html">
+                        CSS
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -24,15 +38,40 @@
         <article>
             <h2>Beskrivning av HTTP, TCP och IP</h2>
             <h3>HTTP - Hypertext Transfer Protocol</h3>
-            <p></p>
+            <p>
+                HTTP används av datorerna för att ta kontakt med varandra, be om och skicka information. Med HTTP upprättar datorerna kontakt med varandra och håller sedan den kontakten tills de är klara.
+            </p>
             <h3>TCP - Transmission Control Protocol</h3>
-            <p></p>
+            <p>
+                TCP delar upp information som ska skickas över nätet i mindre delar och håller koll på vilken ordning delarna ska vara i. När en dator tar emot information från webben sätter sen TCP ihop informationen igen. Om en del saknas behöver datorn då bara be om att en liten del ska skickas om.
+            </p>
             <h3>IP - Internet Protocol</h3>
-            <p>IP används för att hitta en annan dators adress på nätet. Protokolet tolkar webbadressen och en förfrågan skickas om vilken IP-adress webbadressens server har.</p>
+            <p>
+                IP används av datorer för att hitta varandra över nätet. Protokollet tolkar webbadresser som människor skriver in och letar fram IP adressen till serven den webbadressen går till. IP adressen kan sedan användas av datorn för att hitta servern.
+            </p>
         </article>
         <article>
             <h2>URL uppbygnad</h2>
-            <p>http://medieteknik.lnu.se/1me321/uppg/u1.html#fragor</p>
+            <h3 id="example-url">
+                http://medieteknik.lnu.se/1me321/uppg/u1.html#fragor
+            </h3>
+            <img src="images/Adress.png" alt="Exempeladress med markeringar för de olika delarna">
+            <p>
+                <strong>http</strong>://medieteknik.lnu.se/1me321/uppg/u1.html#fragor<br>
+                Protokoll. Vilket protokoll eller tjänst som ska användas, i detta fall HTTP.
+            </p>
+            <p>
+                http://<strong>medieteknik.lnu.se</strong>/1me321/uppg/u1.html#fragor<br>
+                Domännamn. Adressen som beskriver vart servern ligger som kan översättas till en IPadress.
+            </p>
+            <p>
+                http://medieteknik.lnu.se/<strong>1me321/uppg/u1.html</strong>#fragor<br>
+                Sökväg. Vart inom servern sidan ligger. I detta fall vill vi komma åt sidan u1 som ligger i filen uppg som i sin tur ligger i filen 1me321.
+            </p>
+            <p>
+                http://medieteknik.lnu.se/1me321/uppg/u1.html#<strong>fragor</strong><br>
+                Stycke. Vilken del av sidan som ska synas i fönstret genom att tex scrolla ner sidan till en rubrik som har idet fragor.
+            </p>
         </article>
     </main>
 </body>
